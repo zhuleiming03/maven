@@ -1,6 +1,6 @@
-package mapper;
+package demo.mapper;
 
-import pojo.Customer;
+import demo.pojo.Customer;
 
 import java.util.List;
 

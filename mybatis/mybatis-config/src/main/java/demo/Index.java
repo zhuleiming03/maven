@@ -1,11 +1,11 @@
-package instance;
+package demo;
 
-import mapper.CustomerMapper;
+import demo.mapper.CustomerMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import pojo.Customer;
+import demo.pojo.Customer;
 
 import java.io.IOException;
 import java.io.InputStream;

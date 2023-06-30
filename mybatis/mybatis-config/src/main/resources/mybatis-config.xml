@@ -10,9 +10,9 @@
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
 
-    <!-- 别名 mybatis.pojo 下的对象不用带包名 类名建议小写开头 如：customer-->
+    <!-- 别名 mybatis.demo.pojo 下的对象不用带包名 类名建议小写开头 如：customer-->
     <typeAliases>
-        <package name="pojo"/>
+        <package name="demo.pojo"/>
     </typeAliases>
 
     <!-- 数据库环境 -->
