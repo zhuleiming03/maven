@@ -1,6 +1,6 @@
-package instance;
+package demo.instance;
 
-import util.JdbcUtil;
+import demo.util.JdbcUtil;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
