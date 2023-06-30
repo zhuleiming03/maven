@@ -1,0 +1,9 @@
+# 忽略所有生成的log文件
+*.log
+*.iml
+# 忽略目录和目录下的文件
+.idea
+.gitignore
+target
+tmp
+log
