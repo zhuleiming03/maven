@@ -1,3 +1,5 @@
+package demo.interceptor;
+
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 

@@ -1,12 +1,12 @@
+package demo;
+
+import demo.interceptor.MyMethodInterceptor;
+import demo.pojo.Cat;
 import net.sf.cglib.proxy.Enhancer;
-import org.junit.Test;
-import pojo.Cat;
 
-public class CgLibAgentTest {
+public class Index {
 
-    @Test
-    public void agentTest() {
-
+    public static void main(String[] args) {
         //创建Enhancer对象，类似于JDK动态代理的Proxy类，下一步就是设置几个参数
         Enhancer enhancer = new Enhancer();
         //设置目标类的字节码文件

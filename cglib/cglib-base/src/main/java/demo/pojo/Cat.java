@@ -1,4 +1,4 @@
-package pojo;
+package demo.pojo;
 
 public class Cat {
 
