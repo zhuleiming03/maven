@@ -5,6 +5,6 @@
 
 <mapper namespace="mapper.CustomerMapper">
     <select id="listCustomer" resultType="pojo.Customer">
-        select * from t_customer;
+        select id,customer_name customerName,amount from t_customer;
     </select>
 </mapper>

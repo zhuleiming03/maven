@@ -5,24 +5,24 @@
 
 <mapper namespace="mapper.CustomerMapper">
     <select id="select" parameterType="string" resultType="pojo.Customer">
-        select * from t_customer where name=#{name};
+        select * from t_customer_disposable where name=#{name};
     </select>
 
     <insert id="insert" parameterType="pojo.Customer" >
-        insert t_customer(id,name,amount) value (#{id},#{name},#{amount})
+        insert t_customer_disposable(id,name,amount) value (#{id},#{name},#{amount})
     </insert>
 
     <update id="update" parameterType="pojo.Customer" >
-        update t_customer set name=#{name},amount=#{amount} where id=#{id}
+        update t_customer_disposable set name=#{name},amount=#{amount} where id=#{id}
     </update>
 
     <delete id="delete" parameterType="java.lang.Integer">
-        delete t_customer where id=#{id}
+        delete t_customer_disposable where id=#{id}
     </delete>
 
     <update id="create" >
-        drop table if exists t_customer;
-        create table `t_customer` (
+        drop table if exists t_customer_disposable;
+        create table `t_customer_disposable` (
           `id` int not null auto_increment primary key,
           `name` varchar(10) null,
           `amount` float null

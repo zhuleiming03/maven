@@ -1,18 +1,20 @@
 package pojo;
 
+import java.math.BigDecimal;
+
 public class Customer {
 
     private Integer id;
 
-    private String name;
+    private String customerName;
 
-    private Float amount;
+    private BigDecimal amount;
 
     @Override
     public String toString() {
         return "Customer{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", customerName='" + customerName + '\'' +
                 ", amount=" + amount +
                 '}';
     }
@@ -25,19 +27,19 @@ public class Customer {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
-    public Float getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(Float amount) {
+    public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 }

@@ -11,9 +11,9 @@ public class Index {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         // 2 数据库连接信息
-        String url = "jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai&useSSL=true";
+        String url = "jdbc:mysql://localhost:3306/demo?serverTimezone=Asia/Shanghai&useSSL=true";
         String username = "root";
-        String password = "root";
+        String password = "123456";
 
         // 3 连接数据库
         Connection connection = DriverManager.getConnection(url, username, password);
@@ -22,14 +22,14 @@ public class Index {
         Statement statement = connection.createStatement();
 
         // 5 执行 SQL
-        String sql = "select * from t_customer where id in (1,2,3)";
+        String sql = "select * from t_user where id in (1,2,3)";
         ResultSet resultSet = statement.executeQuery(sql);
 
         while (resultSet.next()) {
-            System.out.println(String.format("id: %s , name: %s , amount: %s ",
+            System.out.println(String.format("id: %s , code: %s , name: %s ",
                     resultSet.getObject("id"),
-                    resultSet.getObject("name"),
-                    resultSet.getObject("amount")));
+                    resultSet.getObject("user_code"),
+                    resultSet.getObject("user_name")));
         }
 
         // 6 释放连接

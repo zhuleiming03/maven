@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.CustomerMapper">
-    <select id="listCustomer" resultType="customer">
-        select * from t_customer;
+    <select id="listCustomer" resultType="pojo.Customer">
+        select id,customer_name customerName,amount from t_customer;
     </select>
 </mapper>
