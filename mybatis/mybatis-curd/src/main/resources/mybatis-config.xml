@@ -4,7 +4,7 @@
 
     <!-- 别名 -->
     <typeAliases>
-        <package name="pojo"/>
+        <package name="demo.pojo"/>
     </typeAliases>
     <!-- 数据库环境 -->
     <environments default="development">
