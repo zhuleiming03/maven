@@ -1,10 +1,10 @@
+package demo;
+
 import cn.hutool.core.convert.Convert;
-import org.junit.Test;
 
-public class DigitToChineseTest {
+public class Index {
 
-    @Test
-    public void main() {
+    public static void main(String[] args) {
         double money = 12345678.199995;
         System.out.printf("%s : %s \n", money, Convert.digitToChinese(money));
 
